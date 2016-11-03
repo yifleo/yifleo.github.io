@@ -6,39 +6,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="That which does not kill us makes us stronger.">
-    <title>View使用动画的三种方式 - That which does not kill us makes us stronger.</title>
+    <title>Tag: View,Animation - That which does not kill us makes us stronger.</title>
     <meta name="author" content="Yif">
     
     
     
-    <meta name="description" content="Exploring Meaningful Motion on Android
-1.直接使用View中的方法view.setTranslationX();
-view.setTranslationY();
-view.setAlpha();
-view.setRotation();
-view.setScale();
-只能使用一次,直接改变控件的状态,不能设置duration,repeat和listener">
+    <meta name="description" content="Android Developer">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="View使用动画的三种方式">
-<meta property="og:url" content="http://yifleo.github.io/2016/11/01/view/index.html">
+<meta property="og:title" content="That which does not kill us makes us stronger.">
+<meta property="og:url" content="http://yifleo.github.io/tags/View-Animation/index.html">
 <meta property="og:site_name" content="That which does not kill us makes us stronger.">
-<meta property="og:description" content="Exploring Meaningful Motion on Android
-1.直接使用View中的方法view.setTranslationX();
-view.setTranslationY();
-view.setAlpha();
-view.setRotation();
-view.setScale();
-只能使用一次,直接改变控件的状态,不能设置duration,repeat和listener">
-<meta property="og:updated_time" content="2016-11-03T15:17:14.497Z">
+<meta property="og:description" content="Android Developer">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="View使用动画的三种方式">
-<meta name="twitter:description" content="Exploring Meaningful Motion on Android
-1.直接使用View中的方法view.setTranslationX();
-view.setTranslationY();
-view.setAlpha();
-view.setRotation();
-view.setScale();
-只能使用一次,直接改变控件的状态,不能设置duration,repeat和listener">
+<meta name="twitter:title" content="That which does not kill us makes us stronger.">
+<meta name="twitter:description" content="Android Developer">
     
     
         
@@ -213,16 +194,21 @@ view.setScale();
                         hasCoverMetaIn
                         ">
                 
-<article class="post" itemscope itemType="http://schema.org/BlogPosting">
+    <section class="postShorten-group main-content-wrap">
     
     
-        <div class="post-header main-content-wrap text-left">
-    
-        <h1 class="post-title" itemprop="headline">
-            View使用动画的三种方式
-        </h1>
-    
-    <div class="post-meta">
+    <article class="postShorten postShorten--thumbnailimg-right" itemscope itemType="http://schema.org/BlogPosting">
+        <div class="postShorten-wrap">
+            
+            <div class="postShorten-header">
+                <h1 class="postShorten-title" itemprop="headline">
+                    
+                        <a class="link-unstyled" href="/2016/11/01/view/">
+                            View使用动画的三种方式
+                        </a>
+                    
+                </h1>
+                <div class="postShorten-meta">
     <time itemprop="datePublished" datetime="2016-11-01T23:18:26+08:00">
 	
 		    01 Nov 2016
@@ -231,114 +217,37 @@ view.setScale();
     
 </div>
 
-</div>
-    
-    <div class="post-content markdown" itemprop="articleBody">
-        <div class="main-content-wrap">
-            <p><a href="https://labs.ribot.co.uk/exploring-meaningful-motion-on-android-1cd95a4bc61d#.vd5lbi9xv" target="_blank" rel="external">Exploring Meaningful Motion on Android</a></p>
+            </div>
+            
+                <div class="postShorten-excerpt" itemprop="articleBody">
+                    <p><a href="https://labs.ribot.co.uk/exploring-meaningful-motion-on-android-1cd95a4bc61d#.vd5lbi9xv">Exploring Meaningful Motion on Android</a></p>
 <h6 id="1-直接使用View中的方法"><a href="#1-直接使用View中的方法" class="headerlink" title="1.直接使用View中的方法"></a>1.直接使用View中的方法</h6><pre><code>view.setTranslationX();
 view.setTranslationY();
 view.setAlpha();
 view.setRotation();
 view.setScale();
 </code></pre><p>只能使用一次,直接改变控件的状态,不能设置duration,repeat和listener</p>
-<a id="more"></a>
-<h6 id="2-使用view-animate-返回的ViewPropertyAnimator"><a href="#2-使用view-animate-返回的ViewPropertyAnimator" class="headerlink" title="2.使用view.animate()返回的ViewPropertyAnimator"></a>2.使用view.animate()返回的ViewPropertyAnimator</h6><pre><code>mButton.animate()
-    .alpha(1f)
-    .scaleX(1f)
-    .scaleY(1f)
-    .translationZ(10f)
-    .setInterpolator(new FastOutSlowInInterpolator())
-    .setStartDelay(200)
-    .setListener(new Animator.AnimatorListener() {
-        @Override
-        public void onAnimationStart(Animator animation) { }
-
-        @Override
-        public void onAnimationEnd(Animator animation) { }
-
-        @Override
-        public void onAnimationCancel(Animator animation) { }
-
-        @Override
-        public void onAnimationRepeat(Animator animation) { }
-    })
-    .start();
-</code></pre><p>和ObjectAnimator很类似,不过不能设置repeat和变化的value</p>
-<h6 id="3-使用ObjectAnimator和ValueAnimator"><a href="#3-使用ObjectAnimator和ValueAnimator" class="headerlink" title="3.使用ObjectAnimator和ValueAnimator"></a>3.使用ObjectAnimator和ValueAnimator</h6><p>属性动画,功能最完整</p>
-
+                    
+                        <a href="/2016/11/01/view/" class="postShorten-excerpt_link link">
+                            Continuer
+                        </a>
+                        
+                    
+                </div>
             
         </div>
-    </div>
-    <div id="post-footer" class="post-footer main-content-wrap">
         
-            <div class="post-footer-tags">
-                <span class="text-color-light text-small">TAGGÉ DANS</span><br/>
-                
-    <a class="tag tag--primary tag--small t-link" href="/tags/View-Animation/">View,Animation</a>
-
-            </div>
+    </article>
+    
+    <div class="pagination-bar">
+    <ul class="pagination">
         
-        <div class="post-actions-wrap">
-    <nav>
-        <ul class="post-actions post-action-nav">
-            <li class="post-action">
-                
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/11/03/hello-world/"  data-tooltip="Hello World">
-                
-                    <i class="fa fa-angle-left"></i>
-                    <span class="hide-xs hide-sm text-small icon-ml">PRÉCÉDENT</span>
-                </a>
-            </li>
-            <li class="post-action">
-                
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/11/01/Gson/" data-tooltip="Gson的高级,优化用法">
-                
-                    <span class="hide-xs hide-sm text-small icon-mr">SUIVANT</span>
-                    <i class="fa fa-angle-right"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <ul class="post-actions post-action-share">
-        <li class="post-action hide-lg hide-md hide-sm">
-            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
-                <i class="fa fa-share-alt"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://yifleo.github.io/2016/11/01/view/">
-                <i class="fa fa-google-plus"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yifleo.github.io/2016/11/01/view/">
-                <i class="fa fa-facebook-official"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://yifleo.github.io/2016/11/01/view/">
-                <i class="fa fa-twitter"></i>
-            </a>
-        </li>
         
-        <li class="post-action">
-            
-                <a class="post-action-btn btn btn--default" href="#">
-            
-                <i class="fa fa-list"></i>
-            </a>
-        </li>
+        <li class="pagination-number">page sur</li>
     </ul>
 </div>
 
-
-        
-            
-        
-    </div>
-</article>
-
+</section>
 
 
                 <footer id="footer" class="main-content-wrap">
@@ -348,84 +257,6 @@ view.setScale();
 </footer>
 
             </div>
-            
-                <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
-                    <div class="post-actions-wrap">
-    <nav>
-        <ul class="post-actions post-action-nav">
-            <li class="post-action">
-                
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/11/03/hello-world/"  data-tooltip="Hello World">
-                
-                    <i class="fa fa-angle-left"></i>
-                    <span class="hide-xs hide-sm text-small icon-ml">PRÉCÉDENT</span>
-                </a>
-            </li>
-            <li class="post-action">
-                
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/11/01/Gson/" data-tooltip="Gson的高级,优化用法">
-                
-                    <span class="hide-xs hide-sm text-small icon-mr">SUIVANT</span>
-                    <i class="fa fa-angle-right"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <ul class="post-actions post-action-share">
-        <li class="post-action hide-lg hide-md hide-sm">
-            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
-                <i class="fa fa-share-alt"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://yifleo.github.io/2016/11/01/view/">
-                <i class="fa fa-google-plus"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yifleo.github.io/2016/11/01/view/">
-                <i class="fa fa-facebook-official"></i>
-            </a>
-        </li>
-        <li class="post-action hide-xs">
-            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://yifleo.github.io/2016/11/01/view/">
-                <i class="fa fa-twitter"></i>
-            </a>
-        </li>
-        
-        <li class="post-action">
-            
-                <a class="post-action-btn btn btn--default" href="#">
-            
-                <i class="fa fa-list"></i>
-            </a>
-        </li>
-    </ul>
-</div>
-
-
-                </div>
-                <div id="share-options-bar" class="share-options-bar" data-behavior="4">
-    <ul class="share-options">
-        <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://yifleo.github.io/2016/11/01/view/">
-                <i class="fa fa-google-plus"></i><span>Partager sur Google Plus</span>
-            </a>
-        </li>
-        <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yifleo.github.io/2016/11/01/view/">
-                <i class="fa fa-facebook-official"></i><span>Partager sur Facebook</span>
-            </a>
-        </li>
-        <li class="share-option">
-            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://yifleo.github.io/2016/11/01/view/">
-                <i class="fa fa-twitter"></i><span>Partager sur Twitter</span>
-            </a>
-        </li>
-    </ul>
-</div>
-<div id="share-options-mask" class="share-options-mask"></div>
-
             
         </div>
         
@@ -566,8 +397,6 @@ view.setScale();
         <!--SCRIPTS-->
 <script src="/assets/js/script-rt08quwts7iav5x0cfd2ym0gb5qkd1lvrsmwrakxtkhefmaaes4ywkmnjnwf.min.js"></script>
 <!--SCRIPTS END-->
-
-    
 
 
 
