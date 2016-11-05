@@ -6,20 +6,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="That which does not kill us makes us stronger.">
-    <title>Archives: 2016 - That which does not kill us makes us stronger.</title>
+    <title>View使用动画的三种方式 - That which does not kill us makes us stronger.</title>
     <meta name="author" content="Yif">
     
     
     
-    <meta name="description" content="Android Developer">
+    <meta name="description" content="Exploring Meaningful Motion on Android
+1.直接使用View中的方法view.setTranslationX();
+view.setTranslationY();
+view.setAlpha();
+view.setRotation();
+view.setScale();
+只能使用一次,直接改变控件的状态,不能设置duration,repeat和listener">
 <meta property="og:type" content="blog">
-<meta property="og:title" content="That which does not kill us makes us stronger.">
-<meta property="og:url" content="http://yifleo.github.io/archives/2016/index.html">
+<meta property="og:title" content="View使用动画的三种方式">
+<meta property="og:url" content="http://yifleo.github.io/2016/01/01/view/index.html">
 <meta property="og:site_name" content="That which does not kill us makes us stronger.">
-<meta property="og:description" content="Android Developer">
+<meta property="og:description" content="Exploring Meaningful Motion on Android
+1.直接使用View中的方法view.setTranslationX();
+view.setTranslationY();
+view.setAlpha();
+view.setRotation();
+view.setScale();
+只能使用一次,直接改变控件的状态,不能设置duration,repeat和listener">
+<meta property="og:updated_time" content="2016-11-05T01:47:54.267Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="That which does not kill us makes us stronger.">
-<meta name="twitter:description" content="Android Developer">
+<meta name="twitter:title" content="View使用动画的三种方式">
+<meta name="twitter:description" content="Exploring Meaningful Motion on Android
+1.直接使用View中的方法view.setTranslationX();
+view.setTranslationY();
+view.setAlpha();
+view.setRotation();
+view.setScale();
+只能使用一次,直接改变控件的状态,不能设置duration,repeat和listener">
     
     
         
@@ -194,102 +213,16 @@
                         hasCoverMetaIn
                         ">
                 
-    <section class="postShorten-group main-content-wrap">
+<article class="post" itemscope itemType="http://schema.org/BlogPosting">
     
     
-    <article class="postShorten postShorten--thumbnailimg-right" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2016/11/03/hello-world/">
-                            Hello World
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2016-11-03T22:14:41+08:00">
-	
-		    Nov 03, 2016
-    	
-    </time>
+        <div class="post-header main-content-wrap text-left">
     
-</div>
-
-            </div>
-            
-                <div class="postShorten-excerpt" itemprop="articleBody">
-                    <p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-                    
-                        <a href="/2016/11/03/hello-world/" class="postShorten-excerpt_link link">
-                            Continue reading
-                        </a>
-                        
-                    
-                </div>
-            
-        </div>
-        
-    </article>
+        <h1 class="post-title" itemprop="headline">
+            View使用动画的三种方式
+        </h1>
     
-    
-    <article class="postShorten postShorten--thumbnailimg-right" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2016/11/01/Gson/">
-                            Gson的高级,优化用法
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2016-11-01T23:14:39+08:00">
-	
-		    Nov 01, 2016
-    	
-    </time>
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-excerpt" itemprop="articleBody">
-                    <blockquote>
-<p>使用JsonReader的skip()方法可以在读取大量json数据的时候跳过部分不需要的数据,取关键的数据,达到优化的目的.</p>
-<h2 id="json数据"><a href="#json数据" class="headerlink" title="json数据"></a>json数据</h2><pre><code>http://stackoverflow.com/questions/15529433/how-can-i-skip-unwanted-values-using-jsonreader
-</code></pre></blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   &quot;data&quot;:&#123;</span><br><span class="line">      &quot;current_condition&quot;:[</span><br><span class="line">         &#123;</span><br><span class="line">         &#125;</span><br><span class="line">      ],</span><br><span class="line">      &quot;request&quot;:[</span><br><span class="line">         &#123;</span><br><span class="line">            &quot;query&quot;:&quot;Minsk, Belarus&quot;,</span><br><span class="line">            &quot;type&quot;:&quot;City&quot;</span><br><span class="line">         &#125;</span><br><span class="line">      ],</span><br><span class="line">      &quot;weather&quot;:[</span><br><span class="line">         &#123;</span><br><span class="line">            &quot;date&quot;:&quot;2013-03-20&quot;,</span><br><span class="line">            &quot;precipMM&quot;:&quot;4.4&quot;,</span><br><span class="line">            &quot;tempMaxC&quot;:&quot;-4&quot;,</span><br><span class="line">            &quot;tempMaxF&quot;:&quot;25&quot;,</span><br><span class="line">            &quot;tempMinC&quot;:&quot;-13&quot;,</span><br><span class="line">            &quot;tempMinF&quot;:&quot;10&quot;,</span><br><span class="line">            &quot;weatherCode&quot;:&quot;326&quot;,</span><br><span class="line">            &quot;weatherDesc&quot;:[</span><br><span class="line">               &#123;</span><br><span class="line">                  &quot;value&quot;:&quot;Light snow&quot;</span><br><span class="line">               &#125;</span><br><span class="line">            ],</span><br><span class="line">            &quot;windspeedKmph&quot;:&quot;17&quot;,</span><br><span class="line">            &quot;windspeedMiles&quot;:&quot;11&quot;</span><br><span class="line">         &#125;,</span><br><span class="line">      ]</span><br><span class="line">    &#125;&#125;</span><br></pre></td></tr></table></figure>
-                    
-                        <a href="/2016/11/01/Gson/" class="postShorten-excerpt_link link">
-                            Continue reading
-                        </a>
-                        
-                    
-                </div>
-            
-        </div>
-        
-    </article>
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-right" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2016/01/01/view/">
-                            View使用动画的三种方式
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
+    <div class="post-meta">
     <time itemprop="datePublished" datetime="2016-01-01T23:18:26+08:00">
 	
 		    Jan 01, 2016
@@ -298,37 +231,113 @@
     
 </div>
 
-            </div>
-            
-                <div class="postShorten-excerpt" itemprop="articleBody">
-                    <p><a href="https://labs.ribot.co.uk/exploring-meaningful-motion-on-android-1cd95a4bc61d#.vd5lbi9xv">Exploring Meaningful Motion on Android</a></p>
+</div>
+    
+    <div class="post-content markdown" itemprop="articleBody">
+        <div class="main-content-wrap">
+            <p><a href="https://labs.ribot.co.uk/exploring-meaningful-motion-on-android-1cd95a4bc61d#.vd5lbi9xv" target="_blank" rel="external">Exploring Meaningful Motion on Android</a></p>
 <h6 id="1-直接使用View中的方法"><a href="#1-直接使用View中的方法" class="headerlink" title="1.直接使用View中的方法"></a>1.直接使用View中的方法</h6><pre><code>view.setTranslationX();
 view.setTranslationY();
 view.setAlpha();
 view.setRotation();
 view.setScale();
 </code></pre><p>只能使用一次,直接改变控件的状态,不能设置duration,repeat和listener</p>
-                    
-                        <a href="/2016/01/01/view/" class="postShorten-excerpt_link link">
-                            Continue reading
-                        </a>
-                        
-                    
-                </div>
+<a id="more"></a>
+<h6 id="2-使用view-animate-返回的ViewPropertyAnimator"><a href="#2-使用view-animate-返回的ViewPropertyAnimator" class="headerlink" title="2.使用view.animate()返回的ViewPropertyAnimator"></a>2.使用view.animate()返回的ViewPropertyAnimator</h6><pre><code>mButton.animate()
+    .alpha(1f)
+    .scaleX(1f)
+    .scaleY(1f)
+    .translationZ(10f)
+    .setInterpolator(new FastOutSlowInInterpolator())
+    .setStartDelay(200)
+    .setListener(new Animator.AnimatorListener() {
+        @Override
+        public void onAnimationStart(Animator animation) { }
+
+        @Override
+        public void onAnimationEnd(Animator animation) { }
+
+        @Override
+        public void onAnimationCancel(Animator animation) { }
+
+        @Override
+        public void onAnimationRepeat(Animator animation) { }
+    })
+    .start();
+</code></pre><p>和ObjectAnimator很类似,不过不能设置repeat和变化的value</p>
+<h6 id="3-使用ObjectAnimator和ValueAnimator"><a href="#3-使用ObjectAnimator和ValueAnimator" class="headerlink" title="3.使用ObjectAnimator和ValueAnimator"></a>3.使用ObjectAnimator和ValueAnimator</h6><p>属性动画,功能最完整</p>
+
             
         </div>
+    </div>
+    <div id="post-footer" class="post-footer main-content-wrap">
         
-    </article>
-    
-    <div class="pagination-bar">
-    <ul class="pagination">
+            <div class="post-footer-tags">
+                <span class="text-color-light text-small">TAGGED IN</span><br/>
+                
+    <a class="tag tag--primary tag--small t-link" href="/tags/View/">View</a>
+
+            </div>
         
+        <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/11/01/Gson/"  data-tooltip="Gson的高级,优化用法">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://yifleo.github.io/2016/01/01/view/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yifleo.github.io/2016/01/01/view/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://yifleo.github.io/2016/01/01/view/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
         
-        <li class="pagination-number">page 1 of 1</li>
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#">
+            
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
     </ul>
 </div>
 
-</section>
+
+        
+            
+        
+    </div>
+</article>
 
 
 
@@ -339,6 +348,84 @@ view.setScale();
 </footer>
 
             </div>
+            
+                <div id="bottom-bar" class="post-bottom-bar" data-behavior="4">
+                    <div class="post-actions-wrap">
+    <nav>
+        <ul class="post-actions post-action-nav">
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/11/01/Gson/"  data-tooltip="Gson的高级,优化用法">
+                
+                    <i class="fa fa-angle-left"></i>
+                    <span class="hide-xs hide-sm text-small icon-ml">PREVIOUS</span>
+                </a>
+            </li>
+            <li class="post-action">
+                
+                    <a class="post-action-btn btn btn--disabled">
+                
+                    <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <ul class="post-actions post-action-share">
+        <li class="post-action hide-lg hide-md hide-sm">
+            <a class="post-action-btn btn btn--default btn-open-shareoptions"  href="#btn-open-shareoptions">
+                <i class="fa fa-share-alt"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://plus.google.com/share?url=http://yifleo.github.io/2016/01/01/view/">
+                <i class="fa fa-google-plus"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yifleo.github.io/2016/01/01/view/">
+                <i class="fa fa-facebook-official"></i>
+            </a>
+        </li>
+        <li class="post-action hide-xs">
+            <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://yifleo.github.io/2016/01/01/view/">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+        
+        <li class="post-action">
+            
+                <a class="post-action-btn btn btn--default" href="#">
+            
+                <i class="fa fa-list"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+                </div>
+                <div id="share-options-bar" class="share-options-bar" data-behavior="4">
+    <ul class="share-options">
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://plus.google.com/share?url=http://yifleo.github.io/2016/01/01/view/">
+                <i class="fa fa-google-plus"></i><span>Share on Google Plus</span>
+            </a>
+        </li>
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://yifleo.github.io/2016/01/01/view/">
+                <i class="fa fa-facebook-official"></i><span>Share on Facebook</span>
+            </a>
+        </li>
+        <li class="share-option">
+            <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http://yifleo.github.io/2016/01/01/view/">
+                <i class="fa fa-twitter"></i><span>Share on Twitter</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
             
         </div>
         
@@ -479,6 +566,8 @@ view.setScale();
         <!--SCRIPTS-->
 <script src="/assets/js/script-rt08quwts7iav5x0cfd2ym0gb5qkd1lvrsmwrakxtkhefmaaes4ywkmnjnwf.min.js"></script>
 <!--SCRIPTS END-->
+
+    
 
 
 

@@ -19,7 +19,7 @@ Quick">
 <meta property="og:site_name" content="That which does not kill us makes us stronger.">
 <meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
 Quick">
-<meta property="og:updated_time" content="2016-11-03T15:12:03.337Z">
+<meta property="og:updated_time" content="2016-11-05T01:47:41.313Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello World">
 <meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
@@ -250,7 +250,7 @@ Quick">
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/11/01/view/" data-tooltip="View使用动画的三种方式">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/11/01/Gson/" data-tooltip="Gson的高级,优化用法">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right"></i>
@@ -321,7 +321,7 @@ Quick">
             </li>
             <li class="post-action">
                 
-                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/11/01/view/" data-tooltip="View使用动画的三种方式">
+                    <a class="post-action-btn btn btn--default tooltip--top" href="/2016/11/01/Gson/" data-tooltip="Gson的高级,优化用法">
                 
                     <span class="hide-xs hide-sm text-small icon-mr">NEXT</span>
                     <i class="fa fa-angle-right"></i>
@@ -440,6 +440,31 @@ Quick">
                 <div class="media">
                     
                     <div class="media-body">
+                        <a class="link-unstyled" href="http://yifleo.github.io/2016/01/01/view/">
+                            <h3 class="media-heading">View使用动画的三种方式</h3>
+                        </a>
+                        <span class="media-meta">
+                            <span class="media-date text-small">
+                                
+                                    Jan 1, 2016
+                                
+                            </span>
+                        </span>
+                        <div class="media-content hide-xs font-merryweather"><p><a href="https://labs.ribot.co.uk/exploring-meaningful-motion-on-android-1cd95a4bc61d#.vd5lbi9xv">Exploring Meaningful Motion on Android</a></p>
+<h6 id="1-直接使用View中的方法"><a href="#1-直接使用View中的方法" class="headerlink" title="1.直接使用View中的方法"></a>1.直接使用View中的方法</h6><pre><code>view.setTranslationX();
+view.setTranslationY();
+view.setAlpha();
+view.setRotation();
+view.setScale();
+</code></pre><p>只能使用一次,直接改变控件的状态,不能设置duration,repeat和listener</p></div>
+                    </div>
+                    <div style="clear:both;"></div>
+                    <hr>
+                </div>
+                
+                <div class="media">
+                    
+                    <div class="media-body">
                         <a class="link-unstyled" href="http://yifleo.github.io/2016/11/01/Gson/">
                             <h3 class="media-heading">Gson的高级,优化用法</h3>
                         </a>
@@ -455,31 +480,6 @@ Quick">
 <h2 id="json数据"><a href="#json数据" class="headerlink" title="json数据"></a>json数据</h2><pre><code>http://stackoverflow.com/questions/15529433/how-can-i-skip-unwanted-values-using-jsonreader
 </code></pre></blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">   &quot;data&quot;:&#123;</span><br><span class="line">      &quot;current_condition&quot;:[</span><br><span class="line">         &#123;</span><br><span class="line">         &#125;</span><br><span class="line">      ],</span><br><span class="line">      &quot;request&quot;:[</span><br><span class="line">         &#123;</span><br><span class="line">            &quot;query&quot;:&quot;Minsk, Belarus&quot;,</span><br><span class="line">            &quot;type&quot;:&quot;City&quot;</span><br><span class="line">         &#125;</span><br><span class="line">      ],</span><br><span class="line">      &quot;weather&quot;:[</span><br><span class="line">         &#123;</span><br><span class="line">            &quot;date&quot;:&quot;2013-03-20&quot;,</span><br><span class="line">            &quot;precipMM&quot;:&quot;4.4&quot;,</span><br><span class="line">            &quot;tempMaxC&quot;:&quot;-4&quot;,</span><br><span class="line">            &quot;tempMaxF&quot;:&quot;25&quot;,</span><br><span class="line">            &quot;tempMinC&quot;:&quot;-13&quot;,</span><br><span class="line">            &quot;tempMinF&quot;:&quot;10&quot;,</span><br><span class="line">            &quot;weatherCode&quot;:&quot;326&quot;,</span><br><span class="line">            &quot;weatherDesc&quot;:[</span><br><span class="line">               &#123;</span><br><span class="line">                  &quot;value&quot;:&quot;Light snow&quot;</span><br><span class="line">               &#125;</span><br><span class="line">            ],</span><br><span class="line">            &quot;windspeedKmph&quot;:&quot;17&quot;,</span><br><span class="line">            &quot;windspeedMiles&quot;:&quot;11&quot;</span><br><span class="line">         &#125;,</span><br><span class="line">      ]</span><br><span class="line">    &#125;&#125;</span><br></pre></td></tr></table></figure></div>
-                    </div>
-                    <div style="clear:both;"></div>
-                    <hr>
-                </div>
-                
-                <div class="media">
-                    
-                    <div class="media-body">
-                        <a class="link-unstyled" href="http://yifleo.github.io/2016/11/01/view/">
-                            <h3 class="media-heading">View使用动画的三种方式</h3>
-                        </a>
-                        <span class="media-meta">
-                            <span class="media-date text-small">
-                                
-                                    Nov 1, 2016
-                                
-                            </span>
-                        </span>
-                        <div class="media-content hide-xs font-merryweather"><p><a href="https://labs.ribot.co.uk/exploring-meaningful-motion-on-android-1cd95a4bc61d#.vd5lbi9xv">Exploring Meaningful Motion on Android</a></p>
-<h6 id="1-直接使用View中的方法"><a href="#1-直接使用View中的方法" class="headerlink" title="1.直接使用View中的方法"></a>1.直接使用View中的方法</h6><pre><code>view.setTranslationX();
-view.setTranslationY();
-view.setAlpha();
-view.setRotation();
-view.setScale();
-</code></pre><p>只能使用一次,直接改变控件的状态,不能设置duration,repeat和listener</p></div>
                     </div>
                     <div style="clear:both;"></div>
                     <hr>
